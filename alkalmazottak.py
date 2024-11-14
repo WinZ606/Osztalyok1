@@ -6,6 +6,9 @@ class Alkalmazottak:
         self.pozicio = pozicio
         self.kor = 2024 - szul_datum
 
+        def fizetes_emeles(self,szazalek):
+            self.fizetes *= (1+szazalek)
+
     def __str__(self):
         return f"Alkalmazott neve: {self.nev}, születési év: {self.szul_datum}, fizetes: {self.fizetes} fabatka, pozíció: {self.pozicio}, kor: {self.kor} év"
     

@@ -1,4 +1,4 @@
-from alkalmazottak import Alkalmazottak
+from Alkalmazottak import Alkalmazottak
 from etel import Etel
 import fuggvenyek
 
@@ -27,6 +27,9 @@ print(f"A csapat teljes fizetése: {osszes} fabatka")
 fuggvenyek.feladat2(alkalmazott)
 beosztottak = fuggvenyek.feladat3(alkalmazott)
 print(f"Beosztottak száma: {beosztottak}")
-fuggvenyek.feladat4(alkalmazott)"""
+"""
+min_index = fuggvenyek.feladat4(alkalmazott)
 
-fuggvenyek.fizetesemeles(alkalmazott,10)
+print(f"A legkevesebb fizetést {alkalmazott[min_index].nev} kapja, ami: {alkalmazott[min_index].fizetes} fabatka")
+
+alkalmazott[min_index].fizetes_emeles(0.2)
